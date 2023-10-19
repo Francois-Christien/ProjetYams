@@ -10,7 +10,7 @@
     
 }
 
-.dice{
+.dice button{
     height: 80px;
     width: 80px;
     border-radius: 5px;
@@ -23,4 +23,10 @@
     padding-top: 20px;
     display: flex;
     justify-content: center;
+}
+
+/* Tableau */
+td button{
+    border: 0px !important;
+    border-radius: 5px;
 }

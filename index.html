@@ -16,34 +16,103 @@
     <!-- Header -->
     <header></header>
 
-    <!-- Main -->
-    <main>
+<!-- Main -->
+<main>
 
-        <div class="container">
-            <div class="row">
-                <!-- Col Dés -->
-                <div class="col-12 col-md-6">
-                    <!-- Dés -->
-                    <div class="div-dice">
-                        <div class="dice dice1"></div>
-                        <div class="dice dice2"></div>
-                        <div class="dice dice3"></div>
-                        <div class="dice dice4"></div>
-                        <div class="dice dice5"></div>
-                    </div>
-                    <!-- Bouton "Lancer les dés" -->
-                    <div class="div-btn">
-                        <button type="button" class="btn btn-dark btn-lg" id="throwDice">Lancer les dés</button>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Col Dés -->
+            <div class="col-12 col-md-6">
+                <!-- Dés -->
+                <div class="div-dice">
+                    <div class="dice"><button id="dice1"></button></div>
+                    <div class="dice"><button id="dice2"></button></div>
+                    <div class="dice"><button id="dice3"></button></div>
+                    <div class="dice"><button id="dice4"></button></div>
+                    <div class="dice"><button id="dice5"></button></div>
+                    
                 </div>
-
-                <!-- Col tableau de scores -->
-                <div class="col-12 col-md-6 col-arrayScore">
+                <!-- Bouton "Lancer les dés" -->
+                <div class="div-btn">
+                    <button type="button" class="btn btn-dark btn-lg" id="throwDice">Lancer les dés</button>
                 </div>
             </div>
+
+            <!-- Col tableau de scores -->
+            <div class="col-12 col-md-6 col-arrayScore">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            
+                            <th scope="col">Opération</th>
+                            <th scope="col">Calcul des points</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Total 1</th>
+                            <td><button id="total1">Cumul des 1</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Total 2</th>
+                            <td><button id="total2">Cumul des 2</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Total 3</th>
+                            <td><button id="total3">Cumul des 3</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Total 4</th>
+                            <td><button id="total4">Cumul des 4</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Total 5</th>
+                            <td><button id="total5">Cumul des 5</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Total 6</th>
+                            <td><button id="total6">Cumul des 6</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bonus</th>
+                            <td><button id="bonus">Si le cumul de Total 1, 2, 3, 4, 5 et 6 > 63pts : 35pts</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Brelan</th>
+                            <td><button id="brelan">Cumul des 3 dés identiques</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Carré</th>
+                            <td><button id="carre">Cumul des 4 dés identiques</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full</th>
+                            <td><button id="full">Si 2 dés identiques (paire) et 3 dés identiques (brelan) : 25pts</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Petite Suite</th>
+                            <td><button id="petiteSuite">Si les valeurs 1, 2, 3, 4 et 5 sont présentes : 30pts</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Grande Suite</th>
+                            <td><button id="grandeSuite">Si les valeurs 2, 3, 4, 5 et 6 sont présentes : 40pts</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Yams</th>
+                            <td><button id="yams">Si 5 dés identiques : 50pts</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Chance</th>
+                            <td><button id="chance">Cumul des 5 dés</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        
-    </main>
+    </div>
+    
+</main>
 
     <!-- Footer -->
     <footer></footer>
