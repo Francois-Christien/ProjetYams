@@ -1,0 +1,26 @@
+/* Dés */
+.div-dice{
+    height: 50vh;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.dice{
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #242424;
+
+}
+
+.div-btn{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
