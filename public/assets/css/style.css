@@ -19,6 +19,11 @@
     color: #FFF;
 }
 
+.dice button:hover{
+    background-color: #242424ed;
+}
+
+
 .div-btn{
     padding-top: 20px;
     display: flex;
