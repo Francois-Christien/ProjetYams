@@ -1,10 +1,8 @@
 // // // // // // // // // // // // // // // // // // // //
 // // // // // // 1.Fonction Lancer les dés // // // // //
 // // // // // // // // // // // // // // // // // // // //
-// Récupération des élements Dés
-let dices = document.querySelectorAll('.diceButton');
-// Récupération du bouton "Lancer les dés"
-let rollDicesButton = document.getElementById('throwDice');
+let dices = document.querySelectorAll('.diceButton');// Récupération des élements Dés
+let rollDicesButton = document.getElementById('throwDice');// Récupération du bouton "Lancer les dés"
 
 // Fonction Lancer de dés - Jing
 const numberOfTheTrials = 3;
@@ -18,11 +16,15 @@ function rollDices(numberOfTheTotalDices) {
 rollDices(5);
 
 // Affecter visuellement aux dés les résultats du lancer 
-for(index=0;index<dices.length;index++){
-    dices[index].innerHTML = dicesValues[index];
+let btnRollDices = () => {
+    rollDices(5);
+    for(index=0;index<dices.length;index++){
+        dices[index].innerHTML = dicesValues[index];
+    }
 }
+
 // Event Listener 
-rollDicesButton.addEventListener("click", rollDices)
+rollDicesButton.addEventListener("click", btnRollDices)
 
 
 
