@@ -1,15 +1,30 @@
 // // // // // // // // // // // // // // // // // // // //
 // // // // // // 1.Fonction Lancer les dés // // // // //
 // // // // // // // // // // // // // // // // // // // //
-function rollDices(numberOfTheTotalDices) {
-    let dicesValues = [];
+// Récupération des élements Dés
+let dices = document.querySelectorAll('.diceButton');
+// Récupération du bouton "Lancer les dés"
+let rollDicesButton = document.getElementById('throwDice');
 
+// Fonction Lancer de dés - Jing
+const numberOfTheTrials = 3;
+let dicesValues = [];
+
+function rollDices(numberOfTheTotalDices) {
     for (let i = 0; i < numberOfTheTotalDices; i++) {
         dicesValues[i] = Math.floor(Math.random() * 6 + 1);
-    }
-    return dicesValues;
+    };
+};
+rollDices(5);
+
+// Affecter visuellement aux dés les résultats du lancer 
+for (index = 0; index < dices.length; index++) {
+    dices[index].innerHTML = dicesValues[index];
 }
-console.log(rollDices(5));
+// Event Listener 
+rollDicesButton.addEventListener("click", rollDices)
+
+
 
 // // // // // // // // // // // // // // // // // // // //
 // // // // // // 1.Fin fonction Lancer les dés // // // //
@@ -19,29 +34,39 @@ console.log(rollDices(5));
 // // // // // // 2.Fonction Bloquer les dés // // // // //
 // // // // // // // // // // // // // // // // // // // //
 
+// récupération des chaque dè 
+// const dice1 = document.getElementById("dice1");
+// const dice2 = document.getElementById("dice2");
+// const dice3 = document.getElementById("dice3");
+// const dice4 = document.getElementById("dice4");
+// const dice5 = document.getElementById("dice5");
+
 function restartDices() {
-    // let resultsFirstRoll= rollDices(5);
+
+    let resultsFirstRoll = rollDices(5);
+    
 
     let keepDices = [];
-
     // choix utilisateur 
-    keepDices.push(4,5);
-
+    keepDices.push(4, 5);
     console.log(keepDices);
-    
     let resultsSecondRoll = rollDices(3);
-    
-    console.log(resultsSecondRoll)
+    console.log(resultsSecondRoll);
 
-    resultsSecondRoll.forEach((dice)=> {
-      // choix utilisateur 
+    resultsSecondRoll.forEach((dice) => {
+        // choix utilisateur 
         console.log(keepDices.push(dice));
     })
     console.log(keepDices);
 
 }
 
-restartDices();
+// restartDices();
+
+// // Event Listener 
+dices.addEventListener("click", ()=> {
+
+})
 
 // // // // // // // // // // // // // // // // // // // //
 // // // // // // 2.Fin Fonction Bloquer les dés// // // //
