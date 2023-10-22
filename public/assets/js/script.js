@@ -62,7 +62,7 @@ const nbrOfoccurrences = (value) => {
 
 // vérifier si l'occurrence est égale à trois ou plus pour savoir si il y a un brelan
 
-if (nbrOfoccurrences(1) >= 3) || (nbrOfoccurrences(2) >= 3) || (nbrOfoccurrences(3) >= 3) || (nbrOfoccurrences(4) >= 3) || (nbrOfoccurrences(5) >= 3) || (nbrOfoccurrences(6) >= 3) {
+if (nbrOfoccurrences(1) >= 3) || (nbrOfoccurrences(2) >= 3) || (nbrOfoccurrences(3) >= 3) || (nbrOfoccurrences(4) >= 3) || (nbrOfoccurrences(5) >= 3) || (nbrOfoccurrences(6) >= 3) { 
     
 }
 // carré
